@@ -17,10 +17,13 @@ $(function() {
       var numResults = res.data.length;
       if (numResults) {
         var randomIdx = Math.floor(Math.random() * numResults);
+        var $newCol = $("<div>", { class: "col-md-4 col-12 mb-4"});
         var $newGif = $("<img>", {
-          src: res.data[randomIdx].images.original.url
+          src: res.data[randomIdx].images.original.url,
+          class: "w-100"
         });
-        $gifArea.append($newGif);
+        $newCol.append($newGif);
+        $gifArea.append($newCol);
       }
     });
   });
