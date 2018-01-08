@@ -17,11 +17,12 @@ $(function() {
       var numResults = res.data.length;
       if (numResults) {
         var randomIdx = Math.floor(Math.random() * numResults);
-        var $newGif = $("<img>", { src: res.data[randomIdx].images.original.url})
+        var $newGif = $("<img>", {
+          src: res.data[randomIdx].images.original.url
+        });
         $gifArea.append($newGif);
       }
-      debugger
-    })
+    });
   });
 
   $("#remove").on("click", function() {
