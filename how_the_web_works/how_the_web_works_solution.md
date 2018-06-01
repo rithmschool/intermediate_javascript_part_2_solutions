@@ -84,4 +84,4 @@
 
 20. Make a GET request to http://omdbapi.com?t=titanic using curl (your answer should be the curl command required).
 
-    `curl http://omdbapi.com?t=titanic`
+    `curl https://icanhazdadjoke.com/search\?term\=pirate`
